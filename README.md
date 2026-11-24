@@ -1,10 +1,12 @@
 # Spotify LED Matrix Display
 
 A wireless "now playing" display for Spotify, built on an ESP32 and a 64×64 RGB LED matrix. The album cover of whatever is playing spins on the panel like a vinyl record, and it can switch to time-synced lyrics, a still cover, or a clock with live weather. Everything is controlled from a phone dashboard that the ESP32 serves itself.
+<img width="1206" height="1327" alt="IMG_2796" src="https://github.com/user-attachments/assets/cf2f2a33-821a-498d-8e56-f1583594218c" />
 
-<!-- Add a photo or short GIF of the display here, e.g.:
-![Spotify LED matrix display](docs/display.gif)
--->
+<img width="1206" height="1280" alt="IMG_2794" src="https://github.com/user-attachments/assets/977c8d89-ab64-4d7b-a729-e25139ca81a8" />
+
+https://github.com/user-attachments/assets/6144b79d-7bca-4691-82dc-c6e0ea3cb930
+
 
 ## Features
 
