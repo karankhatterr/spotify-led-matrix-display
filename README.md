@@ -1,9 +1,11 @@
 # Spotify LED Matrix Display
 
 A wireless "now playing" display for Spotify, built on an ESP32 and a 64×64 RGB LED matrix. The album cover of whatever is playing spins on the panel like a vinyl record, and it can switch to time-synced lyrics, a still cover, or a clock with live weather. Everything is controlled from a phone dashboard that the ESP32 serves itself.
-<img width="1206" height="1327" alt="IMG_2796" src="https://github.com/user-attachments/assets/cf2f2a33-821a-498d-8e56-f1583594218c" />
 
-<img width="1206" height="1280" alt="IMG_2794" src="https://github.com/user-attachments/assets/977c8d89-ab64-4d7b-a729-e25139ca81a8" />
+<p align="center">
+  <img width="400" alt="Album cover spinning as a disc on the 64x64 LED matrix" src="https://github.com/user-attachments/assets/cf2f2a33-821a-498d-8e56-f1583594218c" />
+  <img width="400" alt="Spotify LED matrix display" src="https://github.com/user-attachments/assets/977c8d89-ab64-4d7b-a729-e25139ca81a8" />
+</p>
 
 https://github.com/user-attachments/assets/6144b79d-7bca-4691-82dc-c6e0ea3cb930
 
@@ -16,7 +18,7 @@ https://github.com/user-attachments/assets/6144b79d-7bca-4691-82dc-c6e0ea3cb930
   - **Cover**: the plain album cover.
 - **Home mode**: a clock with the current weather (from [Open-Meteo](https://open-meteo.com)), animated weather icons and a sky gradient that follows the time of day.
 - **Phone dashboard** at `http://spotify-disc.local`: switch views, set brightness and spin speed, tune the image and the panel, and see the connection status. It can be added to the iPhone home screen and opens like an app.
-- **Wi‑Fi handling written from scratch**: remembers up to 8 networks, and opens a setup hotspot (`SpotifyDisc-Setup`) with a captive portal when no known network is in range.
+- **Wi-Fi handling written from scratch**: remembers up to 8 networks, and opens a setup hotspot (`SpotifyDisc-Setup`) with a captive portal when no known network is in range.
 - **Image processing for LED panels**: black level, contrast curve, saturation, shadow desaturation and a per-channel white-balance table, so album art looks right on LEDs instead of washed out or tinted.
 - **Optional physical button** for switching views without the phone.
 
@@ -85,13 +87,13 @@ Board: *ESP32 Dev Module* from the Espressif ESP32 board package.
 cp firmware/spotify_disc/secrets.example.h firmware/spotify_disc/secrets.h
 ```
 
-Fill in your Wi‑Fi name and password and the three Spotify values. `secrets.h` is in `.gitignore`, so your credentials stay on your machine.
+Fill in your Wi-Fi name and password and the three Spotify values. `secrets.h` is in `.gitignore`, so your credentials stay on your machine.
 
 ### 4. Flash
 
 Open `firmware/spotify_disc/spotify_disc.ino` in the Arduino IDE and upload. Then open `http://spotify-disc.local` on a phone or computer on the same network.
 
-To add another Wi‑Fi network later, hold the **BOOT** button for 3 seconds, join `SpotifyDisc-Setup` with your phone, and pick the network.
+To add another Wi-Fi network later, hold the **BOOT** button for 3 seconds, join `SpotifyDisc-Setup` with your phone, and pick the network.
 
 ## Engineering notes
 
