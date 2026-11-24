@@ -1,0 +1,11 @@
+# Private credentials
+secrets.h
+
+# OS / editor
+.DS_Store
+.vscode/
+*.swp
+
+# Build output
+build/
+.pio/
